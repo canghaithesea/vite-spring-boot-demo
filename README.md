@@ -105,10 +105,15 @@ git remote add origin <your-repo-url>
 git push -u origin main
 ```
 ## 永久让git走代理
+
+```bash
 git config --global http.proxy  http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
+```
 
 ## 不需要时取消代理
+
+```bash
 git config --global --unset http.proxy
 git config --global --unset https.proxy
-
+```
